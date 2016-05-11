@@ -1,0 +1,34 @@
+@import 'style';
+
+$dark: #282c37;
+$blue: #6aafe6;
+$mid_blue: #8ec0e4;
+$light_blue: #bfcdd9;
+$lighter_blue:  #d4dfe6;
+$white: #FFFFFF;
+
+#title{
+
+  color: $dark;
+  text-align: center;
+  font-weight:500;
+  padding: 2em 2em 3em 2em;
+  font-size: 2.5em;
+  margin: 0;
+
+}
+
+.image_grid{
+    width: 70%;
+    margin: 0 auto;
+    a{
+      display: inline-block;
+      margin: 0 22px 30px 22px;
+      width: calc(50% - 50px);
+      img{
+            width: 100%;
+            border: 3px solid $lighter_blue;
+            border-radius: .8em;
+      }
+    }
+}
