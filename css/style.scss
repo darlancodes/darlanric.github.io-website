@@ -1,0 +1,294 @@
+//-------------Colors:
+$dark: #282c37;
+$blue: #6aafe6;
+$mid_blue: #8ec0e4;
+$light_blue: #bfcdd9;
+$lighter_blue:  #d4dfe6;
+$white: #FFFFFF;
+
+*{
+  box-sizing: border-box;
+  -moz-box-sizing:border-box;
+}
+
+body{
+  font-family: 'Raleway', sans-serif;
+}
+
+#border_top{
+  height: 6.5px;
+  border: 0;
+  background-color: $blue;
+  background-image:
+    linear-gradient(
+       to right,
+       $blue,
+       $blue 25%,
+       $mid_blue 25%,
+       $mid_blue 50%,
+       $light_blue 50%,
+       $light_blue 75%,
+       $lighter_blue 75%,
+       $lighter_blue 100%,
+       $lighter_blue 100%
+    );
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    background-size: 100%;
+}
+
+#border_bottom{
+  height: 8px;
+  border: 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: $blue;
+  background-image:
+    linear-gradient(
+       to left,
+       $blue,
+       $blue 25%,
+       $mid_blue 25%,
+       $mid_blue 50%,
+       $light_blue 50%,
+       $light_blue 75%,
+       $lighter_blue 75%,
+       $lighter_blue 100%,
+       $lighter_blue 100%
+    );
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    background-size: 100%;
+}
+
+.clearfix:before, .clearfix:after{
+  content:" ";
+  display: table;
+}
+.clearfix:after{
+  clear:both;
+}
+
+.wrapper{
+  width: 1100px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.header{
+  padding: 3em 0em 1em 0;
+  .logo{
+    float: left;
+  }
+  .nav{
+    float: right;
+  }
+}
+
+
+.logo{
+  background: $blue;
+  border-radius:2em; //Full Circle;
+  margin:0;
+  width:75px;
+  height:55px;
+  line-height: 55px; //Makes the text stays right in the middle
+  text-align: center;
+  color:$white;
+  font-size: 1.7em;
+  font-family: 'Abril Fatface';
+}
+
+.nav{
+  font-size: 1.1em;
+  margin-top:2em;
+  a{
+    color: $mid_blue;
+    text-decoration: none;
+    margin-right: 1rem;
+    transition: color .5s ease-in-out;
+    &:hover{
+      color: $light_blue;
+
+    }
+  }
+}
+
+.wrapper_main{
+  width: 1100px;
+  max-width: 100%;
+  margin: 0 auto;
+  img{
+    width: 12.5em;
+    float: left;
+    margin: 5em 0 0 6em;
+  }
+  .greeting{
+    float: right;
+    margin: 12em 6em 0 0;
+  }
+  p{
+    margin: 0;
+  }
+}
+
+.wrapper_card{
+  width: 1100px;
+  max-width: 100%;
+  margin: 0 auto;
+  p{
+    margin: 0;
+  }
+}
+
+.blue_font{
+  color: $blue;
+  font-size: 1.7em;
+  font-weight: 600;
+}
+.dark_font{
+  color: $dark;
+  font-size: 2.5em;
+  font-weight: 600;
+}
+
+#arrows{
+  margin-left: -1em;
+  img{
+    width: 1.5em;
+    padding-top: 7.5em;
+  }
+}
+
+.card{
+  h2{
+    padding: 2.5em 2.8em 0 2.8em;
+    margin: 0;
+    color: $white;
+    font-size: 1.8em;
+    font-weight: 500;
+  }
+  p {
+    font-weight: 500;
+    color: $white;
+    line-height: 165%;
+    font-size: 104%;
+  }
+  img{
+    max-width: 100%;
+    float: left;
+    position: relative;
+    margin: 0 auto;
+  }
+
+}
+
+.about_card{
+  background-color: $light_blue;
+  p{
+    padding: 3em 5em 5em 5em;
+    text-align: justify;
+    -moz-text-align-last: center;
+    text-align-last: center;
+  }
+}
+.work_card{
+    background-color: $mid_blue;
+    .conteiner{
+      width: 8em;
+      height: 8em;
+      float: left;
+      margin-left: 25%;
+      margin-top: 2em;
+      img {
+        width: 100%;
+        transition: all 0.3s ease;
+        &:hover{
+          transform:scale(1.1);
+        }
+      }
+      h6{
+        font-weight: 500;
+        color: $white;
+        line-height: 165%;
+        font-size: 104%;
+        margin: .3em
+      }
+      a{
+        text-decoration: none;
+      }
+    }
+    p{
+      padding: 3em 0 18% 5em;
+    }
+}
+.skylls_card{
+  background-color: $blue;
+  p{
+    padding: 3em 5em 6.7em 5em;
+    text-align: center;
+    font-size: 140%;
+  }
+}
+
+.contact_card{
+  text-align: center;
+  padding: 5rem 5rem 3.5rem 5rem;
+  h3{
+    color: $blue;
+    font-weight: 500;
+    font-size: 2.3em;
+    margin-bottom: 1.3em;
+  }
+  a {
+    font-size: 1.2em;
+    color: $blue;
+    line-height: 2em;
+    margin-right: .35em;
+
+  }
+}
+#resume{
+  margin-right:0;
+  font-size: 1em;
+  font-weight: 600;
+  text-decoration: none;
+  transition: text-decoration .4s ease-in-out;
+  &:hover{
+      text-decoration: underline;
+  }
+
+}
+.email{
+  border: 2.5px solid $blue;
+  border-radius: 3em;
+  width: 20em;
+  height: 3em;
+  margin: 0 auto;
+  color: $blue;
+  font-size: 1.3em;
+  font-weight: 500;
+  padding: 1rem 2.5rem;
+  transition: border-color .5s ease-in-out,
+              color .5s ease-in-out;
+  &:hover{
+    color: $dark;
+    border-color: $dark;
+  }
+}
+
+#footer{
+  text-align: center;
+
+  a{
+    text-decoration: none;
+    color: $mid_blue;
+    font-size: .8em;
+    padding-bottom: 2em;
+    transition: color .5s ease-in-out;
+    &:hover{
+      color: $dark;
+    }
+  }
+}
