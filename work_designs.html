@@ -3,9 +3,9 @@
 ---
     <div class="wrapper">
       <header class="header clearfix">
-        <a href="{{site.baseurl}}"><p class="logo">Dr</p></a>
+        <a href="{{site.baseurl}}/index/"><p class="logo">Dr</p></a>
         <nav class="nav">
-          <a href="{{site.baseurl}}">Homepage</a>
+          <a href="{{site.baseurl}}/index/">Homepage</a>
           <a href="#contact">Contact</a>
         </nav>
       </header>
@@ -17,14 +17,4 @@
           {% include imagensDesigns.html %}
     </div>
 
-    <div class="card contact_card">
-      <div class="wrapper_card">
-        <h3  id="contact">Contact</h3>
-        <span class="email">darlanric@gmail.com</span><br><br><br>
-        <a href="https://twitter.com/DarlanR"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-        <a href="http://drdrafts.tumblr.com"><i class="fa fa-tumblr" aria-hidden="true"></i></a>
-        <a href="https://github.com/DarlanRic"><i class="fa fa-github" aria-hidden="true"></i></a>
-        <a href="https://instagram.com/darlanric2"><i class="fa fa-instagram" aria-hidden="true"></i></a><br>
-        <a id="resume" href="#">Full Resumé</a>
-      </div>
-    </div>
+    {% include contact.html %}
