@@ -1,4 +1,4 @@
 
-baseurl: /darlaric.github.io
+baseurl: darlaric.github.io
 exclude: ['README.md']
 permalink: pretty
