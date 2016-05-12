@@ -20,3 +20,6 @@ $(document).ready(function() {
 		closeEffect	: 'elastic'
 	});
 });
+
+$('#me').fadeOut(500).fadeIn(800);
+$('.greeting').fadeOut(500).fadeIn(800);
