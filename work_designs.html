@@ -3,9 +3,9 @@
 ---
     <div class="wrapper">
       <header class="header clearfix">
-        <a href="index.html"><p class="logo">Dr</p></a>
+        <a href="{{site.baseurl}}/index/"><p class="logo">Dr</p></a>
         <nav class="nav">
-          <a href="index.html">Homepage</a>
+          <a href="{{site.baseurl}}/index/">Homepage</a>
           <a href="#contact">Contact</a>
         </nav>
       </header>
@@ -14,10 +14,7 @@
       <h1 id="title">Designs</h1>
     </div>
     <div class="wrapper clearfix image_grid">
-          <a href=""><img src="imagens/apple.jpg" alt="apple"></a>
-          <a href=""><img src="imagens/hands_pro.gif" alt="hands"></a>
-          <a href=""><img src="imagens/apple.jpg" alt="apple"></a>
-          <a href=""><img src="imagens/hands_pro.gif" alt="hands"></a>
+          {% include imagensDesigns.html %}
     </div>
 
     <div class="card contact_card">
