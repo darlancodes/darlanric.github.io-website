@@ -1,5 +1,5 @@
-####My Personal Website :)
+### Personal website built with Jekyll
 
- - Powered by Jekyll
-
-Trying out Jekyll - Darlan Ricardo.
+- Designs
+- Illustrations
+- Contact Information
